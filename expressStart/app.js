@@ -4,15 +4,13 @@ var app = express();
 
 app.set('view engine','ejs'); // setting view EJS
 
-app.use('/assets', express.static('assets'));
+app.use('/assets', express.static('assets')); // serving up static files like CSS and images
 
 // below code responds to GET req and sends strings
 app.get('/', function(req, res) {
-  res.send('This is a test page');
+  res.render('index');
 });
-app.get('/home', function(req, res) {
-  res.send('This is a home page');
-});
+
 
 // sending route parameters
 // app.get('/profile/:id', function(req, res) {
