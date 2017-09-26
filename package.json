@@ -1,0 +1,26 @@
+{
+  "name": "nodestuff",
+  "version": "1.0.0",
+  "description": "node things",
+  "main": "dirs.js",
+  "dependencies": {
+    "express": "^4.15.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackIce21/nodeThings.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Adit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackIce21/nodeThings/issues"
+  },
+  "homepage": "https://github.com/BlackIce21/nodeThings#readme"
+}
