@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css"/>
+
+</head>
+
+<body>
+  <!--Using JS code in HTML with EJS-->
+  <% include partials/navs.ejs %>
+  <h1>Welcome to your profile <%= person %></h1>
+  <p>Age: <%= profileData.age %> </p>
+  <p>Job: <%= profileData.job %> </p>
+  <h2>Hobbies</h2>
+  <ul>
+  <% profileData.hobbies.forEach(function(item){ %>
+    <li><%=item %></li>
+    <% }); %>
+</ul>
+
+</body>
+
+</html>

@@ -9,7 +9,7 @@ var server = http.createServer((req, res) => {
     });
     var rs = fs.createReadStream(__dirname + '/index.html', 'utf8');
     rs.pipe(res);
-  } else if (req.url === '/about') {
+  } else if (req.url === '/aboutus') {
     res.writeHead(200, {
       'Content-Type': 'text/html'
     });
