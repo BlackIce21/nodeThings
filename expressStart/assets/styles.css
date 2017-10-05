@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+h2{
+  text-align: center;
+}
+
 p {
   text-align: center;
   font-size: 20px;
@@ -20,4 +24,20 @@ img{
   display: block;
   margin: auto;
   padding: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.container{
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+}
+
+.container input{
+  width: 100%;
+  margin: 4px 0 4px 0;
 }

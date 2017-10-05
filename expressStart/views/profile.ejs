@@ -2,23 +2,43 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="/assets/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
 
 </head>
 
 <body>
   <!--Using JS code in HTML with EJS-->
   <% include partials/navs.ejs %>
-  <h1>Welcome to your profile <%= person %></h1>
-  <p>Age: <%= profileData.age %> </p>
-  <p>Job: <%= profileData.job %> </p>
-  <h2>Hobbies</h2>
-  <ul>
-  <% profileData.hobbies.forEach(function(item){ %>
-    <li><%=item %></li>
-    <% }); %>
-</ul>
-
+    <h1>Welcome to your profile <%= person %></h1>
+    <p>Age:
+      <%= profileData.age %>
+    </p>
+    <p>Job:
+      <%= profileData.job %>
+    </p>
+    <p> Gender:
+      <%= profileData.gender %>
+    </p>
+    <h2>Hobbies</h2>
+    <div class="wrapper">
+    <ul>
+      <% profileData.hobbies.forEach(function(item){ %>
+        <li>
+          <%=item %>
+        </li>
+        <% }); %>
+    </ul>
+  </div>
+  <div class="wrapper">
+    <h2>Allergies</h2>
+    <ul>
+      <% profileData.allergies.forEach(function(item){ %>
+        <li>
+          <%= item %>
+        </li>
+        <% }); %>
+    </ul>
+  </div>
 </body>
 
 </html>

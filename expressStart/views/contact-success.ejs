@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
+</head>
+
+<body>
+  <% include partials/navs.ejs %>
+  <h1>Thank you for contacting us, <%= successData.name%>. </h1>
+  <p> <%= successData.who %> from <%= successData.dept %> will get back to you at your email <%= successData.email %> </p>
+</body>
+
+</html>
